@@ -33,7 +33,7 @@ POST http://localhost:6969/VisionSnap/api/searchByImage
 
 ## 📁 Project Structure
 
-backend/  
+VisionSnap-Backend/  
 │  
 ├── clarifai/  
 │ └── getTagsFromImage.js # Clarifai API integration  
@@ -129,18 +129,18 @@ Here’s how you can verify your backend works correctly using [Postman](https:/
 
 ### 📥 Expected Response:
 
-{  
-  "relatedImages": [  
     {  
-      "id": "abc123",  
-      "alt_description": "A dog running",  
-      "urls": {  
-        "regular": "https://images.unsplash.com/photo-..."  
-      }  
-    },  
-    ...  
-  ]  
-}  
+      "relatedImages": [  
+        {  
+          "id": "abc123",  
+          "alt_description": "A dog running",  
+          "urls": {  
+            "regular": "https://images.unsplash.com/photo-..."  
+          }  
+        },  
+        ...  
+      ]  
+    }  
 
 
 
